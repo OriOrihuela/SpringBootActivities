@@ -22,9 +22,23 @@ pom.xml.next
 release.properties
 
 # Eclipse
+blog/bin/
+local.properties
+bin/
+tmp/
+.metadata
+.loadpath
+.recommenders
 .classpath
 .project
-/bin/
+**/.project
+**/.classpath
+**/.settings/
+**/.tern-project
+*.tmp
+*.bak
+*.swp
+*~.nib
 
 # Library
 .settings/
