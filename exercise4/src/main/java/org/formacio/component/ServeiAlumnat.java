@@ -31,7 +31,7 @@ public class ServeiAlumnat {
 			return false;
 		}
 		else {
-			repositori.getBBDD().putIfAbsent(id, alumne);
+			repositori.altaAlumne(id, alumne);
 			return true;
 		}
 	}
