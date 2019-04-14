@@ -22,8 +22,8 @@ public class ServeiAlumnat {
 	/* ---- Behaviours ---- */
 	@PostConstruct
 	public void initializer() {
-		getRepositori().getBBDD().putIfAbsent(1, "Antonia");
-		getRepositori().getBBDD().putIfAbsent(2, "Joan");
+		getRepositori().altaAlumne(1, "Antonia");
+		getRepositori().altaAlumne(2, "Joan");
 	}
 	
 	public boolean matricula (int id, String alumne) {
