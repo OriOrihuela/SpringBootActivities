@@ -27,7 +27,7 @@ public class RepositoriAlumnesMemoria implements RepositoriAlumnes {
 
 	@Override
 	public void altaAlumne(int id, String nom) {
-		getBBDD().put(id,  nom);
+		getBBDD().putIfAbsent(id,  nom);
 	}
 
 	@Override
