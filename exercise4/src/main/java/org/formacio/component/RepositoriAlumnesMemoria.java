@@ -8,9 +8,18 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class RepositoriAlumnesMemoria implements RepositoriAlumnes {
-
+	
+	/* ---- Properties ---- */
 	private Map<Integer, String> bbdd = new HashMap<>();
 	
+	
+	/* ---- Getters ---- */
+	public Map<Integer, String> getBBDD() {
+		return this.bbdd;
+	}
+	
+	
+	/* ---- Behaviours ---- */
 	@Override
 	public String obteAlumne(int id) {
 		return bbdd.get(id);
