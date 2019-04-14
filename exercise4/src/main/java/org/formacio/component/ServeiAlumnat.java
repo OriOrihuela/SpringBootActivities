@@ -13,6 +13,9 @@ public class ServeiAlumnat {
 	 * Retorna true si l'alumne s'ha inserit, false si no.
 	 */
 	public boolean matricula (int id, String alumne) {
+		if (alumne == null) {
+			return false;
+		}
 		return true;
 	}
 	
