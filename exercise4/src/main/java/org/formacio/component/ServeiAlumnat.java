@@ -27,12 +27,10 @@ public class ServeiAlumnat {
 	}
 	
 	public boolean matricula (int id, String alumne) {
-		if (alumne == null) {
-			return false;
-		}
-		else {
+		if (alumne != null) {
 			repositori.altaAlumne(id, alumne);
 			return true;
 		}
+		return false;
 	}
 }
