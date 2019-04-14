@@ -4,9 +4,9 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 public class RepositoriAlumnesMemoria implements RepositoriAlumnes {
 
 	private Map<Integer, String> bbdd = new HashMap<>();
