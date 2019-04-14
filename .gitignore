@@ -26,6 +26,7 @@ blog/bin/
 local.properties
 bin/
 tmp/
+.DS_Store
 .metadata
 .loadpath
 .recommenders
