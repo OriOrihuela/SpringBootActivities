@@ -1,9 +1,14 @@
 package org.formacio.component;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ServeiAlumnat {
+	
+	/* ---- Properties ---- */
+	@Autowired
+	private RepositoriAlumnesMemoria repositori;
 
 	
 	/**
@@ -16,7 +21,9 @@ public class ServeiAlumnat {
 		if (alumne == null) {
 			return false;
 		}
-		return true;
+		else {
+			repositori.getBBDD().putIfAbsent(id, alumne);
+			return true;
+		}
 	}
-	
 }
