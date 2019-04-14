@@ -22,17 +22,17 @@ public class RepositoriAlumnesMemoria implements RepositoriAlumnes {
 	/* ---- Behaviours ---- */
 	@Override
 	public String obteAlumne(int id) {
-		return bbdd.get(id);
+		return getBBDD().get(id);
 	}
 
 	@Override
 	public void altaAlumne(int id, String nom) {
-		bbdd.put(id,  nom);
+		getBBDD().put(id,  nom);
 	}
 
 	@Override
 	public Collection<String> llistaAlumnes() {
-		return bbdd.values();
+		return getBBDD().values();
 	}
 
 }
