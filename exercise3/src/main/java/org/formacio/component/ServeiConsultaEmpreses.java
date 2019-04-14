@@ -13,11 +13,7 @@ public class ServeiConsultaEmpreses {
 	
 	// modifiqueu aquest metode per canviar el 0 per el valor obtingut del clientCotitzacionsWS
 	public String infoEmpresa(String empresa) {
-		switch (empresa) {
-	     case "cervesses.sa": return "La empresa " + empresa + " cotitza a 30.0";
-	     case "shandies.sa": return "La empresa " + empresa + " cotitza a 10.0";
-	     default : return "La empresa " + empresa + " cotitza a 0";
-		}
+		return "La empresa " + empresa + " cotitza a " + client.obteCotitzacio(empresa);
 	}
 
 	
