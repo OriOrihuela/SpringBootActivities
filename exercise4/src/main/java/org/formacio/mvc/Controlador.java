@@ -14,10 +14,7 @@ public class Controlador {
 	private ServeiAlumnat servei = null;
 	
 	
-	/* ---- Constructor ---- */
-	public Controlador (ServeiAlumnat servei) {
-		this.servei = servei;
-	}
+	
 	
 	
 	/* ---- Getters ---- */
