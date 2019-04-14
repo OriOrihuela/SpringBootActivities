@@ -14,16 +14,13 @@ public class Controlador {
 	private ServeiAlumnat servei = null;
 	
 	
-	
-	
-	
 	/* ---- Getters ---- */
 	public ServeiAlumnat getServei() {
 		return servei;
 	}
 	
 	
-	/* ---- Behaviours ---- */
+	/* ---- Behaviors ---- */
 	@RequestMapping(value = "/alumnes", method = RequestMethod.GET)
 	public int devolverNumeroAlumnes() {
 		return getServei().getRepositori().getBBDD().size();
