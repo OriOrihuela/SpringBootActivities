@@ -20,5 +20,9 @@ public class ClientCotitzacionsWS implements IntegradorCotitzacions {
 		     default : return 20f;
 		}
 	}
+	
+	public int getNombreInvocacions() {
+		return this.nombreInvocacions;
+	}
 
 }
