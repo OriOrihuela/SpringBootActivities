@@ -28,7 +28,7 @@ public class ServeiAlumnat {
 	
 	public boolean matricula (int id, String alumne) {
 		if (alumne != null) {
-			repositori.altaAlumne(id, alumne);
+			getRepositori().altaAlumne(id, alumne);
 			return true;
 		}
 		return false;
